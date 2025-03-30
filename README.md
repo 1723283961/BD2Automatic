@@ -16,6 +16,7 @@
 > /BD2Automatic/images/Equipmentdecomposition/下的图片
 > 
 > 设置图片查看：
+> 
 > <img src="https://github.com/1723283961/BD2AutomaticDecompositionEquipment/blob/kutori/%E9%80%89%E6%8B%A9%E8%A3%85%E5%A4%87.png" width="250px">
 > <img src="https://github.com/1723283961/BD2AutomaticDecompositionEquipment/blob/kutori/%E9%80%89%E6%8B%A9%E8%A3%85%E5%A4%87.png" width="250px">
 > <img src="https://github.com/1723283961/BD2AutomaticDecompositionEquipment/blob/kutori/%E5%88%86%E8%A7%A3%E8%A3%85%E5%A4%87%E9%85%8D%E7%BD%AE%E9%80%89%E6%8B%A9.png" width="250px">
