@@ -27,5 +27,16 @@
 * 装备分解（只搞了这个😁）
 
 
+### 提醒
+* src/main/resources/下的config.properties文件为配置文件，请自行修改
+* src/main/resources/下的logback.xml为日志记录功能可以删除
+
+
+
+### 温馨提示
+* 本项目仅用于学习交流，请勿用于商业用途，否则后果自负
+
+
+
 
 
