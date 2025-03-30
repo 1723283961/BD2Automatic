@@ -3,10 +3,12 @@ package cn.kutori.method;
 import com.sun.jna.platform.win32.User32;
 import com.sun.jna.platform.win32.WinDef;
 import com.sun.jna.platform.win32.WinUser;
+import lombok.extern.slf4j.Slf4j;
 
 /**
  * 模拟鼠标点击
  */
+@Slf4j
 public class SimulateClick {
 
     /**

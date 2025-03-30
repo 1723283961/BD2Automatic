@@ -1,38 +1,40 @@
 package cn.kutori;
 
 import cn.kutori.config.StartConfig;
+import cn.kutori.method.DecomposeEquipment;
 import cn.kutori.method.Position;
-import cn.kutori.method.SimulateClick;
 import com.sun.jna.platform.win32.WinDef;
-import org.opencv.core.Mat;
+import lombok.extern.slf4j.Slf4j;
 
+import java.util.HashMap;
 import java.util.Map;
-
-import static cn.kutori.common.ScreenCaptureCommon.getScreenShot;
 
 /**
  * Hello world!
  *
  */
+@Slf4j
 public class BD2AutomaticDecompositionEquipmentApp {
-    public static void main( String[] args ) {
+    public static void main( String[] args ) throws InterruptedException {
         //加载自动配置类
         StartConfig startConfig = new StartConfig();
-        //获取句柄
+        //获取句柄(其实可以不用但不想改，一些程序可以魔改成后台运行，但发现BD2不行就没改)
         WinDef.HWND Hwnd = startConfig.start();
         //获取图片路径，和匹配值
         Position position = new Position();
-        //获取屏幕截图
-        Mat mat = getScreenShot();
-
+        //创建保存点位
+        Map<String,Map<String,Integer>>map = new HashMap<>();
+        //调用装备分解方法
+        DecomposeEquipment decomposeEquipment = new DecomposeEquipment();
+        //循环次数
+        int NOCycles = 10000;
         try {
-          Map<String,Integer> map = position.getXY(mat,"Max.png");
-          SimulateClick.sendClick(map.get("x"),map.get("y"));
+            do {
+                decomposeEquipment.toDecomposeEquipment(map, position);
+                NOCycles--;
+            }while (NOCycles != 0);
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
-        System.out.println(Hwnd);
-
-
     }
 }

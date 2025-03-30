@@ -1,6 +1,7 @@
 package cn.kutori.method;
 
 import com.sun.jna.platform.win32.WinDef;
+import lombok.extern.slf4j.Slf4j;
 import org.opencv.core.*;
 import org.opencv.imgcodecs.Imgcodecs;
 import org.opencv.imgproc.Imgproc;
@@ -15,6 +16,7 @@ import static cn.kutori.method.SimulateClick.swipeLeft;
 /**
  * 照片路径匹配
  */
+@Slf4j
 public class Position {
 
     /**
@@ -27,18 +29,24 @@ public class Position {
      */
     private final double MatchThreshold;
 
+    /**
+     * 读取文件配置
+     */
     public Position() {
         Properties properties = new Properties();
         try (InputStream input = Position.class.getClassLoader().getResourceAsStream("config.properties")){
-            if (input == null)
+            if (input == null) {
+                log.error("config.properties不存在");
                 throw new RuntimeException("请检查config.properties是否存在");
+            }
             properties.load(input);
             //获取图片路径
             imagePath = System.getProperty("user.dir").replace("\\","/") + properties.getProperty("config.ImagePath");
-            System.out.println(imagePath);
+            log.warn("提示,图片路径为：{}" , imagePath);
             //获取匹配度
             MatchThreshold = Double.parseDouble(properties.getProperty("config.MatchThreshold"));
         } catch (IOException e) {
+            log.error("读取失败：{}",e.getMessage());
             throw new RuntimeException(e);
         }
     }
@@ -134,12 +142,11 @@ public class Position {
         Imgproc.matchTemplate(mat, subImages, result, Imgproc.TM_CCOEFF_NORMED);
         // 获取匹配结果最大值和最小值
         Core.MinMaxLocResult mmr = Core.minMaxLoc(result);
-        System.out.println(mmr.maxVal);
         if (mmr.maxVal >= MatchThreshold) {
             // 获取匹配位置
             return Map.of("x", (int)  mmr.maxLoc.x , "y",  (int)mmr.maxLoc.y);
         }
-        return null;
+        throw new Exception("未找到符合条件的图片");
     }
 
     /**
@@ -153,12 +160,9 @@ public class Position {
         if (subImages.empty()) {
             throw new Exception("无法加载图片，请检查图片名称路径!");
         }
-
         Mat result = new Mat();
         Imgproc.matchTemplate(mat, subImages, result, Imgproc.TM_CCOEFF_NORMED);
-
         Core.MinMaxLocResult mmr = Core.minMaxLoc(result);
-
         while (mmr.maxVal >= MatchThreshold) {
             // 获取当前最匹配的位置
             Point matchLoc = mmr.maxLoc;
