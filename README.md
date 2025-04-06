@@ -29,8 +29,10 @@
 
 
 ### 提醒
-* src/main/resources/下的config.properties文件为配置文件，请自行修改
-* src/main/resources/下的logback.xml为日志记录功能可以删除
+* src/main/resources/下的config.properties文件为配置文件，请自行修改。
+* src/main/resources/下的logback.xml为日志记录功能可以删除。
+* src/main/resources/下的images/Equipmentdecomposition/下的图片为识别图片，如果出现匹配不到图片可以自行更换，但名字需要相同。
+* 如果有问题可以及时提交问题，我会及时回复。
 
 
 
