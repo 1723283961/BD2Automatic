@@ -25,8 +25,8 @@ public class DecomposeEquipment {
         Mat mat = getScreenShot();
         //执行一边在对点位进行缓存处理操作
         //点击Max将制造个数变成max
-        map.put(ImageEnum.Max.getName(),position.getXY(mat,ImageEnum.Max.getImages()));
-        SimulateClick.sendClick(map.get(ImageEnum.Max.getName()).get("x"),map.get(ImageEnum.Max.getName()).get("y"));
+//        map.put(ImageEnum.Max.getName(),position.getXY(mat,ImageEnum.Max.getImages()));
+//        SimulateClick.sendClick(map.get(ImageEnum.Max.getName()).get("x"),map.get(ImageEnum.Max.getName()).get("y"));
         //等待跳转页面
         Thread.sleep(200);
         //点击强化设定
@@ -58,10 +58,9 @@ public class DecomposeEquipment {
         do {
             Mat mat3 = getScreenShot();
             //选择确定
-            //判断是否存在（存在优化问题）
-            if(position.getSum(mat3,ImageEnum.Yes.getImages()) != 0){
-                Mat mat4 = getScreenShot();
-                map.put(ImageEnum.Yes.getName(), position.getXY(mat4,ImageEnum.Yes.getImages()));
+            //判断是否存在
+            if(position.getHave(mat3,ImageEnum.Yes.getImages())){
+                map.put(ImageEnum.Yes.getName(), position.getXY(mat3,ImageEnum.Yes.getImages()));
                 SimulateClick.sendClick(map.get(ImageEnum.Yes.getName()).get("x"),map.get(ImageEnum.Yes.getName()).get("y"));
                 a = false;
             }

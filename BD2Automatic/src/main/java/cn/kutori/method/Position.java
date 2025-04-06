@@ -150,7 +150,7 @@ public class Position {
     }
 
     /**
-     * 获取路径（相对）xy坐标
+     * 判断元素个数
      * @param sub 子图片
      * @return map
      */
@@ -186,4 +186,25 @@ public class Position {
         return sum;
     }
 
+    /**
+     * 判断元素是否存在
+     * @param mat 待匹配的屏幕截图（Mat 对象）
+     * @param sub 子图片文件名（如 "yes.png"）
+     * @return true 如果匹配度 >= MatchThreshold，否则 false
+     * @throws Exception 如果子图片无法加载
+     */
+    public boolean getHave(Mat mat, String sub) throws Exception {
+        // 加载子图片
+        Mat subImage = Imgcodecs.imread(imagePath + sub);
+        if (subImage.empty()) {
+            throw new Exception("无法加载图片，请检查图片名称路径: " + sub);
+        }
+
+        // 模板匹配
+        Mat result = new Mat();
+        Imgproc.matchTemplate(mat, subImage, result, Imgproc.TM_CCOEFF_NORMED);
+        Core.MinMaxLocResult mmr = Core.minMaxLoc(result);
+        // 判断匹配度是否达标
+        return mmr.maxVal >= MatchThreshold;
+    }
 }
