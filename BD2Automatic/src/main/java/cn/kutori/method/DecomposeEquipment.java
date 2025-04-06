@@ -48,19 +48,24 @@ public class DecomposeEquipment {
         Thread.sleep(500);
         //获取屏幕截图
         int sum = 1;
-        int wait = 10000 * 6 * 7;
         //等待
         do {
             //获取屏幕截图
             Mat mat2 = getScreenShot();
             sum = position.getSum(mat2, ImageEnum.Wait.getImages());
-            log.info("大约还需要等待：{} 秒",(wait - 10000 * 6));
-            Thread.sleep(10000 * 6);
         } while (sum != 0);
-        Mat mat3 = getScreenShot();
-        //选择确定
-        map.put(ImageEnum.Yes.getName(), position.getXY(mat3,ImageEnum.Yes.getImages()));
-        SimulateClick.sendClick(map.get(ImageEnum.Yes.getName()).get("x"),map.get(ImageEnum.Yes.getName()).get("y"));
+        boolean a = true;
+        do {
+            Mat mat3 = getScreenShot();
+            //选择确定
+            if(position.getSum(mat3,ImageEnum.Yes.getImages()) == 0){
+                Thread.sleep(2000);//等待2秒
+                return;
+            }
+            map.put(ImageEnum.Yes.getName(), position.getXY(mat3,ImageEnum.Yes.getImages()));
+            SimulateClick.sendClick(map.get(ImageEnum.Yes.getName()).get("x"),map.get(ImageEnum.Yes.getName()).get("y"));
+            a = !a;
+        } while (!a);
         //等待跳转页面
         Thread.sleep(200);
     }

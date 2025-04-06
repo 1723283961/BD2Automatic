@@ -28,10 +28,12 @@ public class BD2AutomaticDecompositionEquipmentApp {
         DecomposeEquipment decomposeEquipment = new DecomposeEquipment();
         //循环次数
         int NOCycles = 10000;
+        int ans = 0;
         try {
             do {
                 decomposeEquipment.toDecomposeEquipment(map, position);
                 NOCycles--;
+                log.info("完成次数：{}",++ans);
             }while (NOCycles != 0);
         } catch (Exception e) {
             throw new RuntimeException(e);
