@@ -14,7 +14,7 @@ import java.util.Map;
  */
 @Slf4j
 public class BD2AutomaticDecompositionEquipmentApp {
-    public static void main( String[] args ) throws InterruptedException {
+    public static void main( String[] args ) {
         //加载自动配置类
         StartConfig startConfig = new StartConfig();
         //获取句柄(其实可以不用但不想改，一些程序可以魔改成后台运行，但发现BD2不行就没改)
