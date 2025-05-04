@@ -1,5 +1,5 @@
 #  棕色尘埃2 自动分解装备脚本
-
+ 棕色尘埃2 自动分解装备脚本
  Brown Dust 2 Automatic Decomposition Equipment Script Tool:
 
  棕色尘埃2自动化脚本
