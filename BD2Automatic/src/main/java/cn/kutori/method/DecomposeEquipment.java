@@ -55,6 +55,7 @@ public class DecomposeEquipment {
             sum = position.getSum(mat2, ImageEnum.Wait.getImages());
         } while (sum != 0);
         boolean a = true;
+        Thread.sleep(500);
         do {
             Mat mat3 = getScreenShot();
             //选择确定

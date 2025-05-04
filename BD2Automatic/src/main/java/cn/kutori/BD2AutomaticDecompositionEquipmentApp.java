@@ -10,8 +10,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Hello world!
- *
+ * 自动刷粉
  */
 @Slf4j
 public class BD2AutomaticDecompositionEquipmentApp {
