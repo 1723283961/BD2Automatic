@@ -23,18 +23,14 @@ public class DecomposeEquipment {
     public void toDecomposeEquipment(Map<String, Map<String,Integer>>map,Position position) throws Exception {
         //获取屏幕截图
         Mat mat = getScreenShot();
-        //执行一边在对点位进行缓存处理操作
+        map.put(ImageEnum.Max.getName(),position.getXY(mat,ImageEnum.Max.getImages()));
+        map.put(ImageEnum.Choice.getName(), position.getXY(mat,ImageEnum.Choice.getImages()));
+
         //点击Max将制造个数变成max
-        map.put(ImageEnum.Max.getName(),position.getXY(mat,ImageEnum.Max.getImages()));
-        SimulateClick.sendClick(map.get(ImageEnum.Max.getName()).get("x"),map.get(ImageEnum.Max.getName()).get("y"));
-        //等待跳转页面
-        Thread.sleep(200);
-        map.put(ImageEnum.Max.getName(),position.getXY(mat,ImageEnum.Max.getImages()));
         SimulateClick.sendClick(map.get(ImageEnum.Max.getName()).get("x"),map.get(ImageEnum.Max.getName()).get("y"));
         //等待跳转页面
         Thread.sleep(200);
         //点击强化设定
-        map.put(ImageEnum.Choice.getName(), position.getXY(mat,ImageEnum.Choice.getImages()));
         SimulateClick.sendClick(map.get(ImageEnum.Choice.getName()).get("x"),map.get(ImageEnum.Choice.getName()).get("y"));
         //等待跳转页面
         Thread.sleep(200);
@@ -74,6 +70,9 @@ public class DecomposeEquipment {
         map.put(ImageEnum.BreakDown.getName(), position.getXY(mat4,ImageEnum.BreakDown.getImages()));
         SimulateClick.sendClick(map.get(ImageEnum.BreakDown.getName()).get("x"),map.get(ImageEnum.BreakDown.getName()).get("y"));
         //等待跳转页面
-        Thread.sleep(200);
+        Thread.sleep(2000);
+        //用来点击取消东西
+        SimulateClick.sendClick(map.get(ImageEnum.Choice.getName()).get("x"),map.get(ImageEnum.Choice.getName()).get("y"));
+        Thread.sleep(2000);
     }
 }
