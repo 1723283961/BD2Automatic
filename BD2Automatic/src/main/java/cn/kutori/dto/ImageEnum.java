@@ -11,6 +11,7 @@ import java.io.Serializable;
 @Getter
 @AllArgsConstructor
 public enum ImageEnum implements Serializable {
+    // 路径： \BD2Automatic\images\Equipmentdecomposition\...
     //装备制造max（建议选最低级的刷）
     Max("Max","Max.png"),
     //强化
@@ -24,7 +25,14 @@ public enum ImageEnum implements Serializable {
     //分解
     OnePieceDecomposition("OnePieceDecomposition","OnePieceDecomposition.png"),
     //等待出现
-    WaitingAppear("WaitingAppear","WaitingAppear.png");
+    WaitingAppear("WaitingAppear","WaitingAppear.png"),
+    // 路径： \BD2Automatic\images\DoomsdayBook\...
+    // Skip （跳过）
+    Skip("Skip","Skip.png"),
+    // Yes（是）
+    Yes("Yes","Yes.png"),
+    // ReChallenge（重试）
+    ReChallenge("ReChallenge","ReChallenge.png");
 
     private final String name;
     private final String images;

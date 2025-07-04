@@ -1,7 +1,7 @@
 package cn.kutori;
 
 import cn.kutori.config.StartConfig;
-import cn.kutori.method.DecomposeEquipment;
+import cn.kutori.GameUtils.DecomposeEquipment;
 import cn.kutori.method.Position;
 import com.sun.jna.platform.win32.WinDef;
 import lombok.extern.slf4j.Slf4j;
@@ -20,7 +20,7 @@ public class BD2AutomaticDecompositionEquipmentApp {
         //获取句柄(其实可以不用但不想改，一些程序可以魔改成后台运行，但发现BD2不行就没改)
         WinDef.HWND Hwnd = startConfig.start();
         //获取图片路径，和匹配值
-        Position position = new Position();
+        Position position = new Position("Equipmentdecomposition");
         //创建保存点位
         Map<String,Map<String,Integer>>map = new HashMap<>();
         //调用装备分解方法

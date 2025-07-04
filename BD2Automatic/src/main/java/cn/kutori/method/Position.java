@@ -32,7 +32,7 @@ public class Position {
     /**
      * 读取文件配置
      */
-    public Position() {
+    public Position(String name) {
         Properties properties = new Properties();
         try (InputStream input = Position.class.getClassLoader().getResourceAsStream("config.properties")){
             if (input == null) {
@@ -41,7 +41,7 @@ public class Position {
             }
             properties.load(input);
             //获取图片路径
-            imagePath = System.getProperty("user.dir").replace("\\","/") + properties.getProperty("config.ImagePath");
+            imagePath = System.getProperty("user.dir").replace("\\","/") + properties.getProperty("config.ImagePath") + name + "/";
             log.warn("提示,图片路径为：{}" , imagePath);
             //获取匹配度
             MatchThreshold = Double.parseDouble(properties.getProperty("config.MatchThreshold"));
@@ -199,7 +199,6 @@ public class Position {
         if (subImage.empty()) {
             throw new Exception("无法加载图片，请检查图片名称路径: " + sub);
         }
-
         // 模板匹配
         Mat result = new Mat();
         Imgproc.matchTemplate(mat, subImage, result, Imgproc.TM_CCOEFF_NORMED);

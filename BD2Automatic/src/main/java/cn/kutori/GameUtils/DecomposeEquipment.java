@@ -1,6 +1,8 @@
-package cn.kutori.method;
+package cn.kutori.GameUtils;
 
 import cn.kutori.dto.ImageEnum;
+import cn.kutori.method.Position;
+import cn.kutori.method.SimulateClick;
 import lombok.extern.slf4j.Slf4j;
 import org.opencv.core.Mat;
 
@@ -20,7 +22,7 @@ public class DecomposeEquipment {
      * @param position 匹配位置点击方法
      * @throws Exception 抛出异常
      */
-    public void toDecomposeEquipment(Map<String, Map<String,Integer>>map,Position position) throws Exception {
+    public void toDecomposeEquipment(Map<String, Map<String,Integer>>map, Position position) throws Exception {
         //获取屏幕截图
         Mat mat = getScreenShot();
         map.put(ImageEnum.Max.getName(),position.getXY(mat,ImageEnum.Max.getImages()));
@@ -52,7 +54,7 @@ public class DecomposeEquipment {
             sum = position.getSum(mat2, ImageEnum.Wait.getImages());
         } while (sum != 0);
 
-        int a = 0;
+        int a;
         do {
             //获取屏幕截图
             Mat mat2 = getScreenShot();
