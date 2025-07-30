@@ -32,7 +32,9 @@ public enum ImageEnum implements Serializable {
     // Yes（是）
     Yes("Yes","Yes.png"),
     // ReChallenge（重试）
-    ReChallenge("ReChallenge","ReChallenge.png");
+    ReChallenge("ReChallenge","ReChallenge.png"),
+    // 魔兽启动
+    BookStart("Start","Start.png");
 
     private final String name;
     private final String images;

@@ -59,7 +59,20 @@ public class DoomsdayBook {
                 c = false;
             }
         }
-        
+    }
+
+    /**
+     * 刷分启动界面
+     * @param map map坐标位置
+     * @param position 匹配位置点击方法
+     * @throws Exception 抛出异常
+     */
+    public void StarBook(Map<String, Map<String,Integer>>map, Position position) throws Exception {
+        //获取屏幕截图
+        Mat mat = new Mat();
+        mat = getScreenShot();
+        map.put(ImageEnum.BookStart.getName(),position.getXY(mat,ImageEnum.BookStart.getImages()));
+        SimulateClick.sendClick(map.get(ImageEnum.BookStart.getName()).get("x"),map.get(ImageEnum.BookStart.getName()).get("y"));
     }
 
 }

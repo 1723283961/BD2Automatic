@@ -13,12 +13,13 @@ import java.util.Map;
  */
 @Slf4j
 public class BD2AutomaticDoomsdayBook {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         StartConfig startConfig = new StartConfig();
         startConfig.start();
         Position position = new Position("DoomsdayBook");
         Map<String, Map<String,Integer>>map = new HashMap<>();
         DoomsdayBook doomsdayBook = new DoomsdayBook();
+        doomsdayBook.StarBook(map, position);
         int NOCycles = 10000;
         int ans = 0;
         try {
