@@ -28,6 +28,13 @@
       <systemPath>${project.basedir}\src\main\resources\opencv\opencv-4100.jar</systemPath>
     </dependency>
 
+    <!--    springboot      -->
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-web</artifactId>
+      <version>3.0.2</version>
+    </dependency>
+
     <!--    lombok     -->
     <dependency>
       <groupId>org.projectlombok</groupId>
