@@ -71,9 +71,13 @@ public class DecomposeEquipment {
         Mat mat4 = getScreenShot();
         map.put(ImageEnum.BreakDown.getName(), position.getXY(mat4,ImageEnum.BreakDown.getImages()));
         SimulateClick.sendClick(map.get(ImageEnum.BreakDown.getName()).get("x"),map.get(ImageEnum.BreakDown.getName()).get("y"));
-        //等待跳转页面
-        Thread.sleep(2000);
-        //用来点击取消东西
+        // 等待分解完成界面出現
+        int wait = 1;
+        do{
+            Mat mat5 = getScreenShot();
+            wait = position.getSum(mat5, ImageEnum.Again.getImages());
+        }while (wait == 0);
+        Thread.sleep(200);
         SimulateClick.sendClick(map.get(ImageEnum.Choice.getName()).get("x"),map.get(ImageEnum.Choice.getName()).get("y"));
         Thread.sleep(2000);
     }

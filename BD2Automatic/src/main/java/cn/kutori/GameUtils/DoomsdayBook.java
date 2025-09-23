@@ -18,7 +18,7 @@ public class DoomsdayBook {
 
     /**
      * 魔兽重复点击流程
-     * @param map 店家位置
+     * @param map 點擊位置
      * @param position 匹配位置点击方法
      * @throws Exception 抛出异常
      */

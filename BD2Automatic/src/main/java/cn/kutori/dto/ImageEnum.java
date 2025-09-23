@@ -26,6 +26,8 @@ public enum ImageEnum implements Serializable {
     OnePieceDecomposition("OnePieceDecomposition","OnePieceDecomposition.png"),
     //等待出现
     WaitingAppear("WaitingAppear","WaitingAppear.png"),
+    //分解完成
+    Again("Again","Again.png"),
     // 路径： \BD2Automatic\images\DoomsdayBook\...
     // Skip （跳过）
     Skip("Skip","Skip.png"),
