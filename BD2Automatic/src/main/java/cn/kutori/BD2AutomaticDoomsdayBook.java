@@ -13,7 +13,7 @@ import java.util.Map;
  */
 @Slf4j
 public class BD2AutomaticDoomsdayBook {
-    public static void main(String[] args) throws Exception {
+    public void start () throws Exception {
         StartConfig startConfig = new StartConfig();
         startConfig.start();
         Position position = new Position("DoomsdayBook");
@@ -31,5 +31,10 @@ public class BD2AutomaticDoomsdayBook {
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
+    }
+
+    public static void main(String[] args) throws Exception {
+        BD2AutomaticDoomsdayBook bd2AutomaticDoomsdayBook = new BD2AutomaticDoomsdayBook();
+        bd2AutomaticDoomsdayBook.start();
     }
 }

@@ -14,7 +14,8 @@ import java.util.Map;
  */
 @Slf4j
 public class BD2AutomaticDecompositionEquipmentApp {
-    public static void main( String[] args ) {
+
+    public void start () throws Exception {
         //加载自动配置类
         StartConfig startConfig = new StartConfig();
         //获取句柄(其实可以不用但不想改，一些程序可以魔改成后台运行，但发现BD2不行就没改)
@@ -37,5 +38,10 @@ public class BD2AutomaticDecompositionEquipmentApp {
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
+    }
+
+    public static void main(String[] args) throws Exception {
+        BD2AutomaticDecompositionEquipmentApp bd2AutomaticDecompositionEquipmentApp = new BD2AutomaticDecompositionEquipmentApp();
+        bd2AutomaticDecompositionEquipmentApp.start();
     }
 }

@@ -33,6 +33,7 @@ public class Position {
      * 读取文件配置
      */
     public Position(String name) {
+
         Properties properties = new Properties();
         try (InputStream input = Position.class.getClassLoader().getResourceAsStream("config.properties")){
             if (input == null) {
@@ -134,7 +135,7 @@ public class Position {
     public Map<String,Integer> getXY(Mat mat,String sub) throws Exception {
         // 加载截图和模板图像
         Mat subImages = Imgcodecs.imread(imagePath + sub);
-        if ( subImages.empty()) {
+        if (subImages.empty()) {
             throw new Exception("无法加载图片，请检查文件路径!");
         }
         // 模板匹配
