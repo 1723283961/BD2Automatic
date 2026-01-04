@@ -27,7 +27,7 @@ public class BD2AutomaticDecompositionEquipmentApp {
         //调用装备分解方法
         DecomposeEquipment decomposeEquipment = new DecomposeEquipment();
         //循环次数
-        int NOCycles = 15;
+        int NOCycles = 30;
         int ans = 0;
         try {
             do {

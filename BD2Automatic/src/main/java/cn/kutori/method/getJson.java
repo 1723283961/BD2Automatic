@@ -1,4 +1,4 @@
-package cn.kutori.GameUtils.Utils.ScriptRecordingTool;
+package cn.kutori.method;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
@@ -7,15 +7,45 @@ import lombok.extern.slf4j.Slf4j;
 import java.awt.*;
 import java.awt.event.KeyEvent;
 import java.io.File;
+import java.io.IOException;
+import java.io.InputStream;
 import java.nio.file.Files;
 import java.util.List;
+import java.util.Properties;
 
 /**
- * 脚本執行工具
+ * 獲取json
  */
 @Slf4j
-public class ScriptPlayer {
+public class getJson {
 
+    private final String jsonPath;
+
+    /**
+     * 读取文件配置
+     */
+    public getJson(String name) {
+
+        Properties properties = new Properties();
+        try (InputStream input = Position.class.getClassLoader().getResourceAsStream("config.properties")){
+            if (input == null) {
+                log.error("config.properties不存在");
+                throw new RuntimeException("请检查config.properties是否存在");
+            }
+            properties.load(input);
+            //获取图片路径
+            jsonPath = System.getProperty("user.dir").replace("\\","/") + properties.getProperty("config.ImagePath") + name + "/";
+            log.warn("提示,Json路径为：{}" , jsonPath);
+            //获取匹配度
+        } catch (IOException e) {
+            log.error("读取失败：{}",e.getMessage());
+            throw new RuntimeException(e);
+        }
+    }
+
+    /**
+     * 脚本對應工具
+     */
     static class KeyAction {
         String key;
         String action;
@@ -44,7 +74,7 @@ public class ScriptPlayer {
      */
     public void runMap(String fileName) throws Exception {
         // 對應的json的脚本
-        String json = Files.readString(new File(fileName + ".json").toPath());
+        String json = Files.readString(new File(jsonPath + fileName).toPath());
         List<KeyAction> actions = new Gson().fromJson(json, new TypeToken<List<KeyAction>>(){}.getType());
 
         Robot robot = new Robot();
@@ -65,4 +95,5 @@ public class ScriptPlayer {
         }
         log.info("脚本执行完毕");
     }
+
 }

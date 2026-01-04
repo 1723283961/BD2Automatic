@@ -35,6 +35,7 @@ public enum MapEnum implements Serializable {
     SummoningSkills_1("SummoningSkills_1","/Role/SummoningSkills_1");
 
 
+
     private final String name;
     private final String images;
 

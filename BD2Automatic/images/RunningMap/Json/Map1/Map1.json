@@ -1,0 +1,1556 @@
+[
+  {
+    "key": "A",
+    "action": "press",
+    "time": 0
+  },
+  {
+    "key": "S",
+    "action": "press",
+    "time": 3
+  },
+  {
+    "key": "A",
+    "action": "release",
+    "time": 2337
+  },
+  {
+    "key": "D",
+    "action": "press",
+    "time": 3063
+  },
+  {
+    "key": "D",
+    "action": "release",
+    "time": 3170
+  },
+  {
+    "key": "D",
+    "action": "press",
+    "time": 3715
+  },
+  {
+    "key": "S",
+    "action": "release",
+    "time": 3779
+  },
+  {
+    "key": "W",
+    "action": "press",
+    "time": 4213
+  },
+  {
+    "key": "W",
+    "action": "release",
+    "time": 4642
+  },
+  {
+    "key": "W",
+    "action": "press",
+    "time": 5328
+  },
+  {
+    "key": "A",
+    "action": "press",
+    "time": 7277
+  },
+  {
+    "key": "D",
+    "action": "release",
+    "time": 7312
+  },
+  {
+    "key": "W",
+    "action": "release",
+    "time": 7560
+  },
+  {
+    "key": "W",
+    "action": "press",
+    "time": 7772
+  },
+  {
+    "key": "A",
+    "action": "release",
+    "time": 8312
+  },
+  {
+    "key": "D",
+    "action": "press",
+    "time": 9146
+  },
+  {
+    "key": "W",
+    "action": "release",
+    "time": 9858
+  },
+  {
+    "key": "A",
+    "action": "press",
+    "time": 10296
+  },
+  {
+    "key": "D",
+    "action": "release",
+    "time": 10304
+  },
+  {
+    "key": "W",
+    "action": "press",
+    "time": 11377
+  },
+  {
+    "key": "A",
+    "action": "release",
+    "time": 11846
+  },
+  {
+    "key": "A",
+    "action": "press",
+    "time": 12139
+  },
+  {
+    "key": "A",
+    "action": "release",
+    "time": 12387
+  },
+  {
+    "key": "D",
+    "action": "press",
+    "time": 12822
+  },
+  {
+    "key": "D",
+    "action": "release",
+    "time": 13255
+  },
+  {
+    "key": "D",
+    "action": "press",
+    "time": 13538
+  },
+  {
+    "key": "D",
+    "action": "release",
+    "time": 13644
+  },
+  {
+    "key": "D",
+    "action": "press",
+    "time": 13938
+  },
+  {
+    "key": "W",
+    "action": "release",
+    "time": 14113
+  },
+  {
+    "key": "W",
+    "action": "press",
+    "time": 14250
+  },
+  {
+    "key": "W",
+    "action": "release",
+    "time": 14300
+  },
+  {
+    "key": "W",
+    "action": "press",
+    "time": 15017
+  },
+  {
+    "key": "D",
+    "action": "release",
+    "time": 15194
+  },
+  {
+    "key": "A",
+    "action": "press",
+    "time": 15229
+  },
+  {
+    "key": "W",
+    "action": "release",
+    "time": 15261
+  },
+  {
+    "key": "W",
+    "action": "press",
+    "time": 15801
+  },
+  {
+    "key": "W",
+    "action": "release",
+    "time": 17539
+  },
+  {
+    "key": "W",
+    "action": "press",
+    "time": 17855
+  },
+  {
+    "key": "W",
+    "action": "release",
+    "time": 18151
+  },
+  {
+    "key": "S",
+    "action": "press",
+    "time": 19046
+  },
+  {
+    "key": "S",
+    "action": "release",
+    "time": 19302
+  },
+  {
+    "key": "S",
+    "action": "press",
+    "time": 19848
+  },
+  {
+    "key": "S",
+    "action": "release",
+    "time": 20957
+  },
+  {
+    "key": "W",
+    "action": "press",
+    "time": 21142
+  },
+  {
+    "key": "W",
+    "action": "release",
+    "time": 21394
+  },
+  {
+    "key": "W",
+    "action": "press",
+    "time": 21671
+  },
+  {
+    "key": "W",
+    "action": "release",
+    "time": 21861
+  },
+  {
+    "key": "D",
+    "action": "press",
+    "time": 22079
+  },
+  {
+    "key": "A",
+    "action": "release",
+    "time": 22115
+  },
+  {
+    "key": "S",
+    "action": "press",
+    "time": 22437
+  },
+  {
+    "key": "D",
+    "action": "release",
+    "time": 23402
+  },
+  {
+    "key": "D",
+    "action": "press",
+    "time": 23836
+  },
+  {
+    "key": "D",
+    "action": "release",
+    "time": 23983
+  },
+  {
+    "key": "D",
+    "action": "press",
+    "time": 24241
+  },
+  {
+    "key": "A",
+    "action": "press",
+    "time": 24670
+  },
+  {
+    "key": "D",
+    "action": "release",
+    "time": 24703
+  },
+  {
+    "key": "A",
+    "action": "release",
+    "time": 25279
+  },
+  {
+    "key": "D",
+    "action": "press",
+    "time": 25749
+  },
+  {
+    "key": "D",
+    "action": "release",
+    "time": 25925
+  },
+  {
+    "key": "A",
+    "action": "press",
+    "time": 26033
+  },
+  {
+    "key": "S",
+    "action": "release",
+    "time": 26573
+  },
+  {
+    "key": "S",
+    "action": "press",
+    "time": 26865
+  },
+  {
+    "key": "S",
+    "action": "release",
+    "time": 27042
+  },
+  {
+    "key": "S",
+    "action": "press",
+    "time": 27264
+  },
+  {
+    "key": "S",
+    "action": "release",
+    "time": 27987
+  },
+  {
+    "key": "S",
+    "action": "press",
+    "time": 28265
+  },
+  {
+    "key": "S",
+    "action": "release",
+    "time": 28446
+  },
+  {
+    "key": "A",
+    "action": "release",
+    "time": 28598
+  },
+
+  {
+    "key": "A",
+    "action": "press",
+    "time": 31510
+  },
+  {
+    "key": "S",
+    "action": "press",
+    "time": 31690
+  },
+  {
+    "key": "S",
+    "action": "release",
+    "time": 34391
+  },
+  {
+    "key": "S",
+    "action": "press",
+    "time": 34749
+  },
+  {
+    "key": "A",
+    "action": "release",
+    "time": 36482
+  },
+  {
+    "key": "D",
+    "action": "press",
+    "time": 36587
+  },
+  {
+    "key": "D",
+    "action": "release",
+    "time": 36628
+  },
+  {
+    "key": "D",
+    "action": "press",
+    "time": 38068
+  },
+  {
+    "key": "S",
+    "action": "release",
+    "time": 38749
+  },
+  {
+    "key": "S",
+    "action": "press",
+    "time": 39213
+  },
+  {
+    "key": "S",
+    "action": "release",
+    "time": 40257
+  },
+  {
+    "key": "S",
+    "action": "press",
+    "time": 41187
+  },
+  {
+    "key": "S",
+    "action": "release",
+    "time": 41622
+  },
+  {
+    "key": "S",
+    "action": "press",
+    "time": 41918
+  },
+  {
+    "key": "D",
+    "action": "release",
+    "time": 43717
+  },
+  {
+    "key": "D",
+    "action": "press",
+    "time": 44620
+  },
+  {
+    "key": "D",
+    "action": "release",
+    "time": 45016
+  },
+  {
+    "key": "D",
+    "action": "press",
+    "time": 45372
+  },
+  {
+    "key": "S",
+    "action": "release",
+    "time": 45984
+  },
+  {
+    "key": "W",
+    "action": "press",
+    "time": 46959
+  },
+  {
+    "key": "D",
+    "action": "release",
+    "time": 47426
+  },
+  {
+    "key": "A",
+    "action": "press",
+    "time": 47533
+  },
+  {
+    "key": "W",
+    "action": "release",
+    "time": 47569
+  },
+  {
+    "key": "S",
+    "action": "press",
+    "time": 47674
+  },
+  {
+    "key": "A",
+    "action": "release",
+    "time": 50915
+  },
+  {
+    "key": "D",
+    "action": "press",
+    "time": 51456
+  },
+  {
+    "key": "D",
+    "action": "release",
+    "time": 51961
+  },
+  {
+    "key": "A",
+    "action": "press",
+    "time": 53077
+  },
+  {
+    "key": "A",
+    "action": "release",
+    "time": 53226
+  },
+  {
+    "key": "A",
+    "action": "press",
+    "time": 53768
+  },
+  {
+    "key": "A",
+    "action": "release",
+    "time": 54550
+  },
+  {
+    "key": "A",
+    "action": "press",
+    "time": 54883
+  },
+  {
+    "key": "S",
+    "action": "release",
+    "time": 56388
+  },
+  {
+    "key": "W",
+    "action": "press",
+    "time": 58906
+  },
+  {
+    "key": "A",
+    "action": "release",
+    "time": 61608
+  },
+  {
+    "key": "A",
+    "action": "press",
+    "time": 61904
+  },
+  {
+    "key": "A",
+    "action": "release",
+    "time": 61946
+  },
+  {
+    "key": "A",
+    "action": "press",
+    "time": 62190
+  },
+  {
+    "key": "A",
+    "action": "release",
+    "time": 62735
+  },
+  {
+    "key": "D",
+    "action": "press",
+    "time": 63158
+  },
+  {
+    "key": "W",
+    "action": "release",
+    "time": 64640
+  },
+  {
+    "key": "W",
+    "action": "press",
+    "time": 65216
+  },
+  {
+    "key": "W",
+    "action": "release",
+    "time": 65898
+  },
+  {
+    "key": "W",
+    "action": "press",
+    "time": 66473
+  },
+  {
+    "key": "W",
+    "action": "release",
+    "time": 66730
+  },
+  {
+    "key": "S",
+    "action": "press",
+    "time": 66985
+  },
+  {
+    "key": "S",
+    "action": "release",
+    "time": 67661
+  },
+  {
+    "key": "A",
+    "action": "press",
+    "time": 68566
+  },
+  {
+    "key": "D",
+    "action": "release",
+    "time": 68634
+  },
+  {
+    "key": "W",
+    "action": "press",
+    "time": 73894
+  },
+  {
+    "key": "A",
+    "action": "release",
+    "time": 74036
+  },
+  {
+    "key": "A",
+    "action": "press",
+    "time": 74258
+  },
+  {
+    "key": "A",
+    "action": "release",
+    "time": 75041
+  },
+  {
+    "key": "A",
+    "action": "press",
+    "time": 75294
+  },
+  {
+    "key": "A",
+    "action": "release",
+    "time": 77712
+  },
+  {
+    "key": "D",
+    "action": "press",
+    "time": 77960
+  },
+  {
+    "key": "W",
+    "action": "release",
+    "time": 80412
+  },
+  {
+    "key": "W",
+    "action": "press",
+    "time": 80953
+  },
+  {
+    "key": "W",
+    "action": "release",
+    "time": 81315
+  },
+  {
+    "key": "W",
+    "action": "press",
+    "time": 81528
+  },
+  {
+    "key": "W",
+    "action": "release",
+    "time": 81776
+  },
+  {
+    "key": "W",
+    "action": "press",
+    "time": 82316
+  },
+  {
+    "key": "W",
+    "action": "release",
+    "time": 82572
+  },
+  {
+    "key": "A",
+    "action": "press",
+    "time": 82575
+  },
+  {
+    "key": "D",
+    "action": "release",
+    "time": 82608
+  },
+  {
+    "key": "S",
+    "action": "press",
+    "time": 82717
+  },
+  {
+    "key": "S",
+    "action": "release",
+    "time": 82901
+  },
+
+  {
+    "key": "S",
+    "action": "press",
+    "time": 83475
+  },
+  {
+    "key": "S",
+    "action": "release",
+    "time": 84294
+  },
+  {
+    "key": "S",
+    "action": "press",
+    "time": 84980
+  },
+  {
+    "key": "S",
+    "action": "release",
+    "time": 87330
+  },
+  {
+    "key": "W",
+    "action": "press",
+    "time": 87717
+  },
+  {
+    "key": "A",
+    "action": "release",
+    "time": 88721
+  },
+  {
+    "key": "A",
+    "action": "press",
+    "time": 89054
+  },
+  {
+    "key": "A",
+    "action": "release",
+    "time": 89302
+  },
+  {
+    "key": "A",
+    "action": "press",
+    "time": 89625
+  },
+  {
+    "key": "A",
+    "action": "release",
+    "time": 89810
+  },
+  {
+    "key": "A",
+    "action": "press",
+    "time": 90205
+  },
+  {
+    "key": "A",
+    "action": "release",
+    "time": 90418
+  },
+  {
+    "key": "D",
+    "action": "press",
+    "time": 92219
+  },
+  {
+    "key": "D",
+    "action": "release",
+    "time": 92765
+  },
+  {
+    "key": "A",
+    "action": "press",
+    "time": 93334
+  },
+  {
+    "key": "A",
+    "action": "release",
+    "time": 93552
+  },
+  {
+    "key": "D",
+    "action": "press",
+    "time": 93627
+  },
+  {
+    "key": "W",
+    "action": "release",
+    "time": 93703
+  },
+  {
+    "key": "S",
+    "action": "press",
+    "time": 93875
+  },
+  {
+    "key": "D",
+    "action": "release",
+    "time": 94021
+  },
+  {
+    "key": "A",
+    "action": "press",
+    "time": 94244
+  },
+  {
+    "key": "A",
+    "action": "release",
+    "time": 94739
+  },
+  {
+    "key": "A",
+    "action": "press",
+    "time": 96219
+  },
+  {
+    "key": "A",
+    "action": "release",
+    "time": 96363
+  },
+  {
+    "key": "D",
+    "action": "press",
+    "time": 97590
+  },
+  {
+    "key": "D",
+    "action": "release",
+    "time": 97839
+  },
+  {
+    "key": "D",
+    "action": "press",
+    "time": 98238
+  },
+  {
+    "key": "D",
+    "action": "release",
+    "time": 98489
+  },
+  {
+    "key": "A",
+    "action": "press",
+    "time": 99823
+  },
+  {
+    "key": "S",
+    "action": "release",
+    "time": 101372
+  },
+  {
+    "key": "W",
+    "action": "press",
+    "time": 101720
+  },
+  {
+    "key": "W",
+    "action": "release",
+    "time": 105941
+  },
+  {
+    "key": "A",
+    "action": "release",
+    "time": 106767
+  },
+  {
+    "key": "A",
+    "action": "press",
+    "time": 107455
+  },
+  {
+    "key": "A",
+    "action": "release",
+    "time": 107703
+  },
+  {
+    "key": "W",
+    "action": "press",
+    "time": 107889
+  },
+  {
+    "key": "A",
+    "action": "press",
+    "time": 107955
+  },
+  {
+    "key": "W",
+    "action": "release",
+    "time": 108712
+  },
+  {
+    "key": "W",
+    "action": "press",
+    "time": 109183
+  },
+  {
+    "key": "A",
+    "action": "release",
+    "time": 110122
+  },
+  {
+    "key": "A",
+    "action": "press",
+    "time": 110409
+  },
+  {
+    "key": "W",
+    "action": "release",
+    "time": 110877
+  },
+  {
+    "key": "W",
+    "action": "press",
+    "time": 111740
+  },
+  {
+    "key": "W",
+    "action": "release",
+    "time": 112423
+  },
+  {
+    "key": "S",
+    "action": "press",
+    "time": 113609
+  },
+  {
+    "key": "S",
+    "action": "release",
+    "time": 113645
+  },
+  {
+    "key": "S",
+    "action": "press",
+    "time": 113760
+  },
+  {
+    "key": "S",
+    "action": "release",
+    "time": 114109
+  },
+  {
+    "key": "S",
+    "action": "press",
+    "time": 114844
+  },
+  {
+    "key": "S",
+    "action": "release",
+    "time": 115089
+  },
+  {
+    "key": "S",
+    "action": "press",
+    "time": 115375
+  },
+  {
+    "key": "S",
+    "action": "release",
+    "time": 115849
+  },
+  {
+    "key": "S",
+    "action": "press",
+    "time": 116240
+  },
+  {
+    "key": "S",
+    "action": "release",
+    "time": 117859
+  },
+  {
+    "key": "S",
+    "action": "press",
+    "time": 118156
+  },
+  {
+    "key": "A",
+    "action": "release",
+    "time": 119233
+  },
+  {
+    "key": "A",
+    "action": "press",
+    "time": 119447
+  },
+  {
+    "key": "A",
+    "action": "release",
+    "time": 119915
+  },
+  {
+    "key": "A",
+    "action": "press",
+    "time": 120021
+  },
+  {
+    "key": "A",
+    "action": "release",
+    "time": 120170
+  },
+  {
+    "key": "A",
+    "action": "press",
+    "time": 120632
+  },
+  {
+    "key": "A",
+    "action": "release",
+    "time": 120812
+  },
+  {
+    "key": "A",
+    "action": "press",
+    "time": 120965
+  },
+  {
+    "key": "S",
+    "action": "release",
+    "time": 122140
+  },
+  {
+    "key": "S",
+    "action": "press",
+    "time": 122948
+  },
+  {
+    "key": "S",
+    "action": "release",
+    "time": 123191
+  },
+  {
+    "key": "S",
+    "action": "press",
+    "time": 124988
+  },
+  {
+    "key": "S",
+    "action": "release",
+    "time": 125852
+  },
+  {
+    "key": "W",
+    "action": "press",
+    "time": 126831
+  },
+  {
+    "key": "W",
+    "action": "release",
+    "time": 127079
+  },
+  {
+    "key": "W",
+    "action": "press",
+    "time": 127587
+  },
+  {
+    "key": "A",
+    "action": "release",
+    "time": 128950
+  },
+  {
+    "key": "W",
+    "action": "release",
+    "time": 131974
+  },
+  {
+    "key": "S",
+    "action": "press",
+    "time": 132089
+  },
+
+  {
+    "key": "D",
+    "action": "press",
+    "time": 134681
+  },
+  {
+    "key": "D",
+    "action": "release",
+    "time": 135033
+  },
+  {
+    "key": "D",
+    "action": "press",
+    "time": 135473
+  },
+  {
+    "key": "S",
+    "action": "release",
+    "time": 136804
+  },
+  {
+    "key": "S",
+    "action": "press",
+    "time": 137306
+  },
+  {
+    "key": "D",
+    "action": "release",
+    "time": 137491
+  },
+  {
+    "key": "A",
+    "action": "press",
+    "time": 138279
+  },
+  {
+    "key": "A",
+    "action": "release",
+    "time": 138607
+  },
+  {
+    "key": "A",
+    "action": "press",
+    "time": 139114
+  },
+  {
+    "key": "A",
+    "action": "release",
+    "time": 139653
+  },
+  {
+    "key": "A",
+    "action": "press",
+    "time": 139972
+  },
+  {
+    "key": "A",
+    "action": "release",
+    "time": 140407
+  },
+  {
+    "key": "A",
+    "action": "press",
+    "time": 140732
+  },
+  {
+    "key": "A",
+    "action": "release",
+    "time": 142494
+  },
+  {
+    "key": "A",
+    "action": "press",
+    "time": 143000
+  },
+  {
+    "key": "A",
+    "action": "release",
+    "time": 143285
+  },
+  {
+    "key": "A",
+    "action": "press",
+    "time": 143504
+  },
+  {
+    "key": "A",
+    "action": "release",
+    "time": 143650
+  },
+  {
+    "key": "D",
+    "action": "press",
+    "time": 144797
+  },
+  {
+    "key": "S",
+    "action": "release",
+    "time": 147000
+  },
+  {
+    "key": "S",
+    "action": "press",
+    "time": 148007
+  },
+  {
+    "key": "S",
+    "action": "release",
+    "time": 148294
+  },
+  {
+    "key": "W",
+    "action": "press",
+    "time": 149446
+  },
+  {
+    "key": "W",
+    "action": "release",
+    "time": 149909
+  },
+  {
+    "key": "S",
+    "action": "press",
+    "time": 150127
+  },
+  {
+    "key": "S",
+    "action": "release",
+    "time": 150995
+  },
+  {
+    "key": "S",
+    "action": "press",
+    "time": 151853
+  },
+  {
+    "key": "S",
+    "action": "release",
+    "time": 152149
+  },
+  {
+    "key": "S",
+    "action": "press",
+    "time": 152938
+  },
+  {
+    "key": "S",
+    "action": "release",
+    "time": 153438
+  },
+  {
+    "key": "W",
+    "action": "press",
+    "time": 154626
+  },
+  {
+    "key": "W",
+    "action": "release",
+    "time": 154696
+  },
+  {
+    "key": "W",
+    "action": "press",
+    "time": 154994
+  },
+  {
+    "key": "W",
+    "action": "release",
+    "time": 155201
+  },
+  {
+    "key": "W",
+    "action": "press",
+    "time": 155493
+  },
+  {
+    "key": "W",
+    "action": "release",
+    "time": 156032
+  },
+  {
+    "key": "W",
+    "action": "press",
+    "time": 156362
+  },
+  {
+    "key": "W",
+    "action": "release",
+    "time": 156645
+  },
+  {
+    "key": "W",
+    "action": "press",
+    "time": 156936
+  },
+  {
+    "key": "W",
+    "action": "release",
+    "time": 157193
+  },
+  {
+    "key": "W",
+    "action": "press",
+    "time": 157543
+  },
+  {
+    "key": "W",
+    "action": "release",
+    "time": 158017
+  },
+  {
+    "key": "W",
+    "action": "press",
+    "time": 158557
+  },
+  {
+    "key": "D",
+    "action": "release",
+    "time": 162992
+  },
+  {
+    "key": "D",
+    "action": "press",
+    "time": 163233
+  },
+  {
+    "key": "D",
+    "action": "release",
+    "time": 165827
+  },
+  {
+    "key": "A",
+    "action": "press",
+    "time": 167120
+  },
+  {
+    "key": "W",
+    "action": "release",
+    "time": 168315
+  },
+  {
+    "key": "W",
+    "action": "press",
+    "time": 168670
+  },
+  {
+    "key": "A",
+    "action": "release",
+    "time": 169071
+  },
+  {
+    "key": "A",
+    "action": "press",
+    "time": 169360
+  },
+  {
+    "key": "W",
+    "action": "release",
+    "time": 171122
+  },
+  {
+    "key": "S",
+    "action": "press",
+    "time": 171563
+  },
+  {
+    "key": "S",
+    "action": "release",
+    "time": 172131
+  },
+  {
+    "key": "S",
+    "action": "press",
+    "time": 172309
+  },
+  {
+    "key": "A",
+    "action": "release",
+    "time": 172451
+  },
+  {
+    "key": "D",
+    "action": "press",
+    "time": 172491
+  },
+  {
+    "key": "S",
+    "action": "release",
+    "time": 172522
+  },
+  {
+    "key": "W",
+    "action": "press",
+    "time": 172710
+  },
+  {
+    "key": "D",
+    "action": "release",
+    "time": 174541
+  },
+  {
+    "key": "D",
+    "action": "press",
+    "time": 174870
+  },
+  {
+    "key": "D",
+    "action": "release",
+    "time": 175552
+  },
+  {
+    "key": "D",
+    "action": "press",
+    "time": 176126
+  },
+  {
+    "key": "W",
+    "action": "release",
+    "time": 176304
+  },
+  {
+    "key": "A",
+    "action": "press",
+    "time": 176418
+  },
+  {
+    "key": "S",
+    "action": "press",
+    "time": 176491
+  },
+  {
+    "key": "D",
+    "action": "release",
+    "time": 176525
+  },
+  {
+    "key": "A",
+    "action": "release",
+    "time": 177711
+  },
+  {
+    "key": "A",
+    "action": "press",
+    "time": 178253
+  },
+  {
+    "key": "S",
+    "action": "release",
+    "time": 181528
+  },
+  {
+    "key": "S",
+    "action": "press",
+    "time": 181600
+  },
+  {
+    "key": "S",
+    "action": "release",
+    "time": 181744
+  },
+  {
+    "key": "W",
+    "action": "press",
+    "time": 184128
+  },
+  {
+    "key": "A",
+    "action": "release",
+    "time": 184259
+  },
+  {
+    "key": "A",
+    "action": "press",
+    "time": 184452
+  },
+  {
+    "key": "A",
+    "action": "release",
+    "time": 184522
+  },
+  {
+    "key": "W",
+    "action": "release",
+    "time": 184729
+  },
+  {
+    "key": "S",
+    "action": "press",
+    "time": 185092
+  },
+  {
+    "key": "S",
+    "action": "release",
+    "time": 185487
+  },
+  {
+    "key": "S",
+    "action": "press",
+    "time": 185532
+  },
+
+  {
+    "key": "A",
+    "action": "press",
+    "time": 185857
+  },
+  {
+    "key": "S",
+    "action": "release",
+    "time": 185882
+  },
+  {
+    "key": "W",
+    "action": "press",
+    "time": 186027
+  },
+  {
+    "key": "A",
+    "action": "release",
+    "time": 186071
+  },
+  {
+    "key": "A",
+    "action": "press",
+    "time": 186527
+  },
+  {
+    "key": "A",
+    "action": "release",
+    "time": 188410
+  },
+  {
+    "key": "D",
+    "action": "press",
+    "time": 190136
+  },
+  {
+    "key": "W",
+    "action": "release",
+    "time": 191290
+  },
+  {
+    "key": "D",
+    "action": "release",
+    "time": 191359
+  },
+  {
+    "key": "S",
+    "action": "press",
+    "time": 191431
+  },
+  {
+    "key": "A",
+    "action": "press",
+    "time": 191615
+  },
+  {
+    "key": "A",
+    "action": "release",
+    "time": 193266
+  },
+  {
+    "key": "A",
+    "action": "press",
+    "time": 193596
+  },
+  {
+    "key": "S",
+    "action": "release",
+    "time": 194492
+  },
+  {
+    "key": "S",
+    "action": "press",
+    "time": 194784
+  },
+  {
+    "key": "S",
+    "action": "release",
+    "time": 195210
+  },
+  {
+    "key": "S",
+    "action": "press",
+    "time": 196869
+  },
+  {
+    "key": "S",
+    "action": "release",
+    "time": 197329
+  },
+  {
+    "key": "S",
+    "action": "press",
+    "time": 197841
+  },
+  {
+    "key": "S",
+    "action": "release",
+    "time": 198452
+  },
+  {
+    "key": "A",
+    "action": "release",
+    "time": 198708
+  }
+]
