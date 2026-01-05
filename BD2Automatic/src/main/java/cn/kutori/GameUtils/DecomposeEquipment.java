@@ -25,9 +25,19 @@ public class DecomposeEquipment {
     public void toDecomposeEquipment(Map<String, Map<String,Integer>>map, Position position) throws Exception {
         //获取屏幕截图
         Mat mat = getScreenShot();
+
+        int NumberOfWarnings = 0;
+        while (!position.getHave(mat,ImageEnum.Max.getImages())){
+            if(NumberOfWarnings >= 5){
+                throw new Exception("请重新启动程序");
+            }
+            log.error("请调整bd2设置成格式要求大小查找不到按钮,请重试,5秒后重试,重试次数:{}",NumberOfWarnings);
+            NumberOfWarnings++;
+            mat = getScreenShot();
+            Thread.sleep(5000);
+        }
         map.put(ImageEnum.Max.getName(),position.getXY(mat,ImageEnum.Max.getImages()));
         map.put(ImageEnum.Choice.getName(), position.getXY(mat,ImageEnum.Choice.getImages()));
-
         //点击Max将制造个数变成max
         SimulateClick.sendClick(map.get(ImageEnum.Max.getName()).get("x"),map.get(ImageEnum.Max.getName()).get("y"));
         //等待跳转页面
@@ -36,49 +46,42 @@ public class DecomposeEquipment {
         SimulateClick.sendClick(map.get(ImageEnum.Choice.getName()).get("x"),map.get(ImageEnum.Choice.getName()).get("y"));
         //等待跳转页面
         Thread.sleep(200);
+
         //获取屏幕截图
-        Mat mat1 = getScreenShot();
+        mat = getScreenShot();
         //等待跳转页面
         Thread.sleep(200);
         //选择强加
-        map.put(ImageEnum.Strengthen.getName(), position.getXY(mat1,ImageEnum.Strengthen.getImages()));
+        map.put(ImageEnum.Strengthen.getName(), position.getXY(mat,ImageEnum.Strengthen.getImages()));
         SimulateClick.sendClick(map.get(ImageEnum.Strengthen.getName()).get("x"),map.get(ImageEnum.Strengthen.getName()).get("y"));
         //等待跳转页面
         Thread.sleep(500);
+
         //获取屏幕截图
-        int sum = 1;
-        //等待
+        //等待点击一键分解
         do {
-            //获取屏幕截图
-            Mat mat2 = getScreenShot();
-            sum = position.getSum(mat2, ImageEnum.Wait.getImages());
-        } while (sum != 0);
-
-        int a;
-        do {
-            //获取屏幕截图
-            Mat mat2 = getScreenShot();
-            a = position.getSum(mat2, ImageEnum.WaitingAppear.getImages());
-        } while (a == 1);
-
+            mat = getScreenShot();
+        } while (!position.getHave(mat, ImageEnum.WaitingAppear.getImages()));
         Thread.sleep(2000);
+
         //获取屏幕截图
-        Mat mat3 = getScreenShot();
-        map.put(ImageEnum.OnePieceDecomposition.getName(), position.getXY(mat3,ImageEnum.OnePieceDecomposition.getImages()));
+        mat = getScreenShot();
+        map.put(ImageEnum.OnePieceDecomposition.getName(), position.getXY(mat,ImageEnum.OnePieceDecomposition.getImages()));
         SimulateClick.sendClick(map.get(ImageEnum.OnePieceDecomposition.getName()).get("x"),map.get(ImageEnum.OnePieceDecomposition.getName()).get("y"));
         Thread.sleep(500);
+
         // 分解
-        Mat mat4 = getScreenShot();
-        map.put(ImageEnum.BreakDown.getName(), position.getXY(mat4,ImageEnum.BreakDown.getImages()));
+        mat = getScreenShot();
+        map.put(ImageEnum.BreakDown.getName(), position.getXY(mat,ImageEnum.BreakDown.getImages()));
         SimulateClick.sendClick(map.get(ImageEnum.BreakDown.getName()).get("x"),map.get(ImageEnum.BreakDown.getName()).get("y"));
         // 等待分解完成界面出現
-        int wait = 1;
-        do{
-            Mat mat5 = getScreenShot();
-            wait = position.getSum(mat5, ImageEnum.Again.getImages());
-        }while (wait == 0);
+        do {
+            mat = getScreenShot();
+        } while (position.getHave(mat, ImageEnum.Again.getImages()));
+
         Thread.sleep(200);
         SimulateClick.sendClick(map.get(ImageEnum.Choice.getName()).get("x"),map.get(ImageEnum.Choice.getName()).get("y"));
         Thread.sleep(2000);
     }
+
 }
