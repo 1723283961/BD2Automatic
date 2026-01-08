@@ -62,7 +62,7 @@ public class DecomposeEquipment {
         do {
             mat = getScreenShot();
         } while (!position.getHave(mat, ImageEnum.WaitingAppear.getImages()));
-        Thread.sleep(2000);
+        Thread.sleep(200);
 
         //获取屏幕截图
         mat = getScreenShot();
@@ -74,10 +74,12 @@ public class DecomposeEquipment {
         mat = getScreenShot();
         map.put(ImageEnum.BreakDown.getName(), position.getXY(mat,ImageEnum.BreakDown.getImages()));
         SimulateClick.sendClick(map.get(ImageEnum.BreakDown.getName()).get("x"),map.get(ImageEnum.BreakDown.getName()).get("y"));
+        Thread.sleep(200);
+
         // 等待分解完成界面出現
         do {
             mat = getScreenShot();
-        } while (position.getHave(mat, ImageEnum.Again.getImages()));
+        } while (!position.getHave(mat, ImageEnum.Again.getImages()));
 
         Thread.sleep(200);
         SimulateClick.sendClick(map.get(ImageEnum.Choice.getName()).get("x"),map.get(ImageEnum.Choice.getName()).get("y"));

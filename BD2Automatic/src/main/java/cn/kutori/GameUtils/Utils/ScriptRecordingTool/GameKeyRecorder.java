@@ -1,5 +1,6 @@
 package cn.kutori.GameUtils.Utils.ScriptRecordingTool;
 
+import cn.kutori.config.SelectRunFileConfig;
 import com.github.kwhat.jnativehook.GlobalScreen;
 import com.github.kwhat.jnativehook.NativeHookException;
 import com.github.kwhat.jnativehook.keyboard.NativeKeyEvent;
@@ -19,7 +20,8 @@ public class GameKeyRecorder implements NativeKeyListener {
     private final Map<Integer, Long> keyPressTime = new HashMap<>();
     private final List<String> keyEvents = new ArrayList<>();
     // 運行
-    private volatile boolean running = false;
+    private volatile boolean running = true;
+
     // 暫停
     private volatile boolean isRecording = false;
 
