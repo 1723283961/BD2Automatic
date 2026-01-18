@@ -10,7 +10,7 @@ import lombok.Getter;
 @AllArgsConstructor
 public enum JsonEnum {
 
-    Map7_2("Map7_2","/Json/Map7/Map_2.json");
+    Map7_2("Map7_2","/Json/Map1/Map1.json");
 
     private final String name;
 
