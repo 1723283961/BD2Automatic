@@ -1,0 +1,52 @@
+.root {
+    -fx-background-color: linear-gradient(
+            to bottom right, #0f2027, #203a43, #2c5364
+    );
+}
+
+.glass-card {
+    -fx-padding: 40;
+    -fx-min-width: 360;
+    -fx-background-color: rgba(255,255,255,0.1);
+    -fx-background-radius: 18;
+    -fx-border-color: rgba(255,255,255,0.25);
+    -fx-border-radius: 18;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.4), 30, 0.4, 0, 10);
+}
+
+.title {
+    -fx-text-fill: white;
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+}
+
+.input {
+    -fx-background-color: rgba(255,255,255,0.18);
+    -fx-text-fill: white;
+    -fx-prompt-text-fill: rgba(255,255,255,0.6);
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-border-color: rgba(255,255,255,0.3);
+    -fx-padding: 10 14;
+}
+
+.input:focused {
+    -fx-border-color: #60a5fa;
+}
+
+.login-btn {
+    -fx-background-color: rgba(96,165,250,0.9);
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 10;
+    -fx-padding: 10 0;
+    -fx-max-width: Infinity;
+}
+
+.error-text {
+    -fx-text-fill: #fca5a5;
+}
+
+.switch-link {
+    -fx-text-fill: #bfdbfe;
+}

@@ -37,6 +37,7 @@ public class DoomsdayBook {
                 SimulateClick.sendClick(map.get(ImageEnum.Skip.getName()).get("x"),map.get(ImageEnum.Skip.getName()).get("y"));
             }
         } while (sum == 0);
+
         boolean b = true;
         while (b){
             //获取屏幕截图
@@ -48,6 +49,7 @@ public class DoomsdayBook {
                 b = false;
             }
         }
+
         boolean c = true;
         while (c){
             //获取屏幕截图

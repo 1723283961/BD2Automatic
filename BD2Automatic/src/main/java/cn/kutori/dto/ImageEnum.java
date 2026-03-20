@@ -28,6 +28,11 @@ public enum ImageEnum implements Serializable {
     WaitingAppear("WaitingAppear","WaitingAppear.png"),
     //分解完成
     Again("Again","Again.png"),
+    // 按钮
+    Button("Button","Button.png"),
+    //结果
+    Result("Result","Result.png"),
+
     // 路径： \BD2Automatic\images\DoomsdayBook\...
     // Skip （跳过）
     Skip("Skip","Skip.png"),
@@ -37,6 +42,7 @@ public enum ImageEnum implements Serializable {
     ReChallenge("ReChallenge","ReChallenge.png"),
     // 魔兽启动
     BookStart("Start","Start.png");
+
 
     private final String name;
     private final String images;

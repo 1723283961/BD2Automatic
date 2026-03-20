@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<StackPane xmlns="http://javafx.com/javafx"
+           xmlns:fx="http://javafx.com/fxml"
+           fx:controller="cn.kutori.bd2swing.Login.Controller.BD2LoginController"
+           styleClass="root">
+
+    <!-- 登录玻璃卡片 -->
+    <VBox spacing="16"
+          alignment="CENTER"
+          styleClass="glass-card">
+
+        <Label fx:id="titleLabel" text="Sign In" styleClass="title"/>
+
+        <TextField fx:id="usernameField"
+                   promptText="Username"
+                   styleClass="input"/>
+
+        <PasswordField fx:id="passwordField"
+                       promptText="Password"
+                       styleClass="input"/>
+
+
+        <!-- 注册时显示 -->
+        <PasswordField fx:id="confirmField"
+                       promptText="Confirm Password"
+                       styleClass="input"
+                       visible="false"
+                       managed="false"/>
+
+        <Button fx:id="actionBtn"
+                text="Login"
+                onAction="#handleAction"
+                styleClass="login-btn"/>
+
+        <Label fx:id="msgLabel" styleClass="error-text"/>
+
+        <Hyperlink fx:id="switchLink"
+                   text="No account? Register"
+                   onAction="#switchMode"
+                   styleClass="switch-link"/>
+    </VBox>
+
+</StackPane>
